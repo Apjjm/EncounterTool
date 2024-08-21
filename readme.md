@@ -3,6 +3,9 @@ Tool for plotting out tables / step charts for finding encounters.
 
 See [examples](./.examples/) for some generated paths.
 
+### Disclaimer
+This is a new WIP project, and there may still be bugs to iron out. I will probably use the charts generated here in my practice runs, but if you use the step charts from here in an actual race, then you are doing so at your own risk! There are existing, battle tested, counting tables for baron out there already!
+
 ### Getting started
  - Download godot Godot v4.3
  - Replace the map files in `./maps` with ones of your choosing
