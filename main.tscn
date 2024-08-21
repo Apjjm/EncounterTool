@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://c12hu01hblsj4"]
+
+[ext_resource type="PackedScene" uid="uid://3rss2oy8vumg" path="res://encounter_finder/EfStepsDialog.tscn" id="1_evpc2"]
+[ext_resource type="Texture2D" uid="uid://c25r21rcfvf4c" path="res://maps/map1.png" id="1_osec3"]
+[ext_resource type="PackedScene" uid="uid://clbpdgqwv6p5f" path="res://EncounterSearchDialog.tscn" id="2_e4wmt"]
+[ext_resource type="Script" path="res://Cam.gd" id="2_u431m"]
+[ext_resource type="Script" path="res://OverlayNode.gd" id="3_8tas0"]
+[ext_resource type="Texture2D" uid="uid://bo6hrivpqsvpn" path="res://maps/map4.png" id="4_q44ct"]
+[ext_resource type="Texture2D" uid="uid://gaxf6gwsgf67" path="res://maps/map2.png" id="5_2xpp8"]
+[ext_resource type="Texture2D" uid="uid://erl5wqna5v4t" path="res://maps/map3.png" id="5_66qpn"]
+[ext_resource type="SystemFont" uid="uid://cp1gu3v67rmqh" path="res://ui_fonts.tres" id="5_wyan8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="OldStepsDialog" parent="." instance=ExtResource("1_evpc2")]
+position = Vector2i(0, 36)
+visible = false
+
+[node name="NewStepsDialog" parent="." instance=ExtResource("2_e4wmt")]
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a Directory"
+ok_button_text = "Select Current Folder"
+file_mode = 2
+access = 2
+use_native_dialog = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+texture_filter = 1
+anchor_mode = 0
+script = ExtResource("2_u431m")
+
+[node name="Map4" type="Sprite2D" parent="Camera2D"]
+visible = false
+texture_repeat = 2
+texture = ExtResource("4_q44ct")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 1024)
+
+[node name="Map3" type="Sprite2D" parent="Camera2D"]
+visible = false
+texture_repeat = 2
+texture = ExtResource("5_66qpn")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 1024)
+
+[node name="Map2" type="Sprite2D" parent="Camera2D"]
+visible = false
+texture_repeat = 2
+texture = ExtResource("5_2xpp8")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 1024)
+
+[node name="Map1" type="Sprite2D" parent="Camera2D"]
+texture_repeat = 2
+texture = ExtResource("1_osec3")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 1024)
+
+[node name="Overlay" type="Node2D" parent="Camera2D"]
+script = ExtResource("3_8tas0")
+verbose_mode = false
+font = ExtResource("5_wyan8")
+
+[connection signal="steps_updated" from="OldStepsDialog" to="Camera2D/Overlay" method="_update_step_log"]
+[connection signal="steps_updated" from="NewStepsDialog" to="Camera2D/Overlay" method="_update_step_log"]
+[connection signal="dir_selected" from="FileDialog" to="Camera2D" method="on_dialog_path_confirmed"]

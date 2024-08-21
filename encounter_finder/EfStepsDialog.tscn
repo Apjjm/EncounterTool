@@ -1,0 +1,475 @@
+[gd_scene load_steps=2 format=3 uid="uid://3rss2oy8vumg"]
+
+[ext_resource type="Script" path="res://encounter_finder/EfStepsDialog.gd" id="1_2vt57"]
+
+[node name="StepsDialog" type="AcceptDialog"]
+title = "Enter in step info"
+size = Vector2i(512, 512)
+visible = true
+script = ExtResource("1_2vt57")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 504.0
+offset_bottom = 463.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ParsedData" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Paste in the output from the encounter finder"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Simbu's Encounter Finder"
+uri = "https://simbu95.github.io/FF4EncounterFinder/"
+
+[node name="Panel" type="Panel" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Reset" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Clear"
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Step: 1
+
+7 Encounters
+
+Encounter 2 at Elements Room has your desired fight
+
+Step: 2
+
+2 Encounters with formation Imp x3
+
+Encounter 3 at Save Room has your desired fight
+
+5 Encounters with formation FloatEye x2
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 3
+
+2 Encounters with formation Eagle x3
+
+Reset
+
+5 Encounters with formation Imp x4
+
+Reset
+
+Step: 4
+
+7 Encounters
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 5
+
+3 Encounters with formation FloatEye x2
+
+Encounter 2 at Save Room has your desired fight
+
+3 Encounters with formation Eagle x2, FloatEye x1
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 6
+
+7 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 7
+
+7 Encounters
+
+Encounter 4 at Elements Room has your desired fight
+
+Step: 8
+
+1 Encounters with formation Imp x3, Sword Rat x1
+
+Encounter 2 at Elements Room has your desired fight
+
+6 Encounters with formation Eagle x3
+
+Encounter 2 at Elements Room has your desired fight
+
+Step: 9
+
+6 Encounters
+
+Encounter 3 at Elements Room has your desired fight
+
+Step: 10
+
+1 Encounters
+
+Encounter 2 at Elements Room has your desired fight
+
+Step: 11
+
+3 Encounters
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 12
+
+7 Encounters
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 13
+
+6 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 14
+
+7 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 15
+
+7 Encounters
+
+Encounter 3 at Elements Room has your desired fight
+
+Step: 16
+
+2 Encounters
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 17
+
+5 Encounters with formation Imp x3, Sword Rat x1
+
+Encounter 1 at Elements Room has your desired fight
+
+2 Encounters with formation Imp x4
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 18
+
+7 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 19
+
+5 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 20
+
+7 Encounters
+
+Reset
+
+Step: 21
+
+3 Encounters
+
+Encounter 3 at Elements Room has your desired fight
+
+Step: 22
+
+7 Encounters
+
+Encounter 2 at Elements Room has your desired fight
+
+Step: 23
+
+2 Encounters with formation Imp x3
+
+Encounter 4 at Save Room has your desired fight
+
+3 Encounters with formation Imp x3, Sword Rat x1
+
+Encounter 1 at Elements Room has your desired fight
+
+2 Encounters with formation Imp x6
+
+Encounter 4 at Save Room has your desired fight
+
+Step: 24
+
+1 Encounters with formation Eagle x2, FloatEye x1
+
+Encounter 1 at Save Room has your desired fight
+
+3 Encounters with formation Imp x3, Sword Rat x1
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 25
+
+7 Encounters
+
+Encounter 4 at Elements Room has your desired fight
+
+Step: 26
+
+7 Encounters
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 27
+
+5 Encounters
+
+Reset
+
+Step: 28
+
+5 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 29
+
+No Encounters
+
+Step: 30
+
+1 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 31
+
+4 Encounters with formation FloatEye x2
+
+Encounter 2 at Save Room has your desired fight
+
+1 Encounters with formation Eagle x2, FloatEye x1
+
+Encounter 2 at Save Room has your desired fight
+
+Step: 32
+
+No Encounters
+
+Step: 33
+
+3 Encounters
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 34
+
+7 Encounters
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 35
+
+1 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 36
+
+7 Encounters
+
+Reset
+
+Step: 37
+
+6 Encounters with formation Imp x3
+
+Reset
+
+1 Encounters with formation Imp x6
+
+Encounter 4 at Save Room has your desired fight
+
+Step: 38
+
+1 Encounters
+
+Encounter 2 at Elements Room has your desired fight
+
+Step: 39
+
+3 Encounters with formation Eagle x3
+
+Reset
+
+3 Encounters with formation Imp x4
+
+Reset
+
+Step: 40
+
+2 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 41
+
+No Encounters
+
+Step: 42
+
+No Encounters
+
+Step: 43
+
+3 Encounters
+
+Encounter 1 at Save Room has your desired fight
+
+Step: 44
+
+4 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 45
+
+2 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 46
+
+7 Encounters
+
+Reset
+
+Step: 47
+
+No Encounters
+
+Step: 48
+
+No Encounters
+
+Step: 49
+
+No Encounters
+
+Step: 50
+
+No Encounters
+
+Step: 51
+
+1 Encounters
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 52
+
+4 Encounters
+
+Encounter 4 at Elements Room has your desired fight
+
+Step: 53
+
+No Encounters
+
+Step: 54
+
+No Encounters
+
+Step: 55
+
+No Encounters
+
+Step: 56
+
+5 Encounters
+
+Reset
+
+Step: 57
+
+5 Encounters with formation Imp x3, Sword Rat x1
+
+Encounter 1 at Elements Room has your desired fight
+
+2 Encounters with formation Imp x4
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 58
+
+No Encounters
+
+Step: 59
+
+No Encounters
+
+Step: 60
+
+No Encounters
+
+Step: 61
+
+No Encounters
+
+Step: 62
+
+No Encounters
+
+Step: 63
+
+No Encounters
+
+Step: 64
+
+No Encounters
+
+Step: 65
+
+2 Encounters
+
+Encounter 1 at Elements Room has your desired fight
+
+Step: 66
+
+No Encounters
+
+Step: 67
+
+2 Encounters
+
+Encounter 3 at Save Room has your desired fight
+
+Step: 68
+
+No Encounters
+
+Step: 69
+
+No Encounters
+
+Step: 70
+
+1 Encounters
+
+Encounter 2 at Elements Room has your desired fight"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Reset" to="." method="_on_reset_pressed"]
+[connection signal="text_changed" from="VBoxContainer/TextEdit" to="." method="_on_text_changed"]

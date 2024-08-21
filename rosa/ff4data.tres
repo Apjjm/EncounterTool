@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b6v8cquqgx0vh"]
+
+[ext_resource type="Script" path="res://rosa/RosaData.gd" id="1_224rp"]
+
+[resource]
+script = ExtResource("1_224rp")
+map_file = "res://rosa/maps.txt"
+encounters_file = "res://rosa/encounters.txt"

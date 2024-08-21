@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=3 uid="uid://clbpdgqwv6p5f"]
+
+[ext_resource type="Script" path="res://EncounterSearchDialog.gd" id="1_0spdc"]
+[ext_resource type="Resource" uid="uid://b6v8cquqgx0vh" path="res://rosa/ff4data.tres" id="2_ge13l"]
+
+[node name="Control" type="AcceptDialog"]
+title = "Configure encounter search"
+initial_position = 2
+size = Vector2i(500, 300)
+visible = true
+script = ExtResource("1_0spdc")
+rosa_data = ExtResource("2_ge13l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 492.0
+offset_bottom = 251.0
+
+[node name="Ls" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start Location"
+
+[node name="S1" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Type" type="OptionButton" parent="VBoxContainer/S1"]
+layout_mode = 2
+size_flags_horizontal = 3
+selected = 0
+item_count = 4
+popup/item_0/text = "Overworld"
+popup/item_1/text = "Underworld"
+popup/item_1/id = 1
+popup/item_2/text = "Lunar"
+popup/item_2/id = 2
+popup/item_3/text = "Interior"
+popup/item_3/id = 3
+
+[node name="StartLocation" type="OptionButton" parent="VBoxContainer/S1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Lf" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Goal Fights"
+
+[node name="F1" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Fight" type="OptionButton" parent="VBoxContainer/F1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoalLocation" type="OptionButton" parent="VBoxContainer/F1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="F2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Fight" type="OptionButton" parent="VBoxContainer/F2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoalLocation" type="OptionButton" parent="VBoxContainer/F2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="F3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Fight" type="OptionButton" parent="VBoxContainer/F3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoalLocation" type="OptionButton" parent="VBoxContainer/F3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="F4" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Fight" type="OptionButton" parent="VBoxContainer/F4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GoalLocation" type="OptionButton" parent="VBoxContainer/F4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]
+[connection signal="item_selected" from="VBoxContainer/S1/Type" to="." method="_on_type_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/F1/Fight" to="." method="_on_fight1_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/F2/Fight" to="." method="_on_fight2_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/F3/Fight" to="." method="_on_fight3_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/F4/Fight" to="." method="_on_fight4_item_selected"]
