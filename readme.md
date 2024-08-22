@@ -8,7 +8,7 @@ This is a new WIP project, and there may still be bugs to iron out. I will proba
 
 ### Getting started
  - Download godot Godot v4.3
- - Replace the map files in `./maps` with ones of your choosing
+ - Replace the map files in [./maps](./maps) with ones of your choosing
    - If you just want to plot a table on a black background, this is optional!
  - Run the main scene
 
