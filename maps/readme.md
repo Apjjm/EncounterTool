@@ -5,4 +5,4 @@ Please manually provide maps for the following:
  - map4.png
 
 A full collections of maps are available at:
- - https://ff4kb.aexoden.com/tools/map-viewer/3000
+ - [aexoden's map view](https://ff4kb.aexoden.com/tools/map-viewer/)
