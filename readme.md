@@ -34,6 +34,10 @@ This is a new WIP project, and there may still be bugs to iron out. I will proba
 |Encounter menu | m / triangle / Y     |
 |Change map  |p / R3                   |
 
+### Changing how it looks
+ - You can make all encounters visible by enabling `verbose_mode` on Overlay
+ - You can change the style of the boxes drawn by increasing `box_style` on Overlay
+
 ### Using FF4FE encounter finder
 If you want to use [FF4FE Encounter Finder](https://simbu95.github.io/FF4EncounterFinder/) to generate input, rather than
 the stepping logic in this tool - change the visibility of `NewStepsDialog` and `OldStepsDialog` in the main scene. On first run you

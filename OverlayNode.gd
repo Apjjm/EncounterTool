@@ -4,6 +4,8 @@ const RenderedStep = preload("RenderedStep.gd")
 const StepData = preload("StepData.gd")
 
 @export var verbose_mode : bool = true
+@export var box_style : int = 0
+
 @export var render_grid : bool = true
 @export var grid_color : Color = Color.LIGHT_GRAY
 @export var grid_color_region : Color = Color.LIGHT_CORAL
@@ -13,7 +15,7 @@ const StepData = preload("StepData.gd")
 @export var font : Font
 @export var info_font_size : int = 24
 @export var ui_text_color : Color = Color.WHITE
-@export var goal_encounter_colors : Array = [Color.WHITE, Color.LIGHT_SALMON, Color.LIGHT_YELLOW, Color.PINK]
+@export var goal_encounter_colors : Array = [Color.WHITE, Color.LIGHT_SALMON, Color.LIGHT_SEA_GREEN, Color.PINK]
 
 var rect : Rect2
 var steps : Array
@@ -116,8 +118,10 @@ func _draw():
 		_draw_grid(grid_size * 32, grid_color_region)
 		_draw_cursor()
 
+	var first_placed = true
 	for step in self.steps:
-		step.draw_box(self, rect.position)
+		step.draw_box(self, rect.position, self.box_style, first_placed)
+		first_placed = first_placed && !step.is_placed()
 	
 	# Text wants to be independent of zoom, so we have to do some local space hackery to work around this
 	var xform = get_global_transform()

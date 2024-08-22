@@ -2,7 +2,8 @@ extends RefCounted
 
 const StepData = preload("StepData.gd")
 
-const color_bg : Color = Color(0, 0, 0, 0.4)
+const color_bg : Color = Color(0, 0, 0, 0.45)
+const color_bg_start : Color = Color(0.75, 0.75, 0.75, 0.45)
 const color_good : Color = Color.YELLOW
 const color_reset : Color = Color.DARK_ORANGE
 const color_text : Array = [Color.WHITE, Color.PINK, Color.YELLOW, Color.ORANGE]
@@ -59,12 +60,20 @@ func calculate_drawings(formation_letters: Dictionary, location_colors: Dictiona
 						_formation_lines.push_back(letters + " x")
 						_formation_colors.push_back(color_reset)
 
-func draw_box(cavas: CanvasItem, cam_pos: Vector2):
+func draw_box(cavas: CanvasItem, cam_pos: Vector2, box_style: int, is_first_placed: bool):
 	if box_visible && is_placed():
 		var pos = (offset / grid_size).floor() * grid_size - cam_pos
-		var pad = Vector2(1,1)
-		cavas.draw_rect(Rect2(pos, grid_size), color_bg, true)
-		cavas.draw_rect(Rect2(pos+pad, grid_size-2*pad), _box_color, false)
+		if box_style % 3 == 0:
+			var bgc = color_bg_start if is_first_placed else color_bg
+			cavas.draw_rect(Rect2(pos, grid_size), Color(bgc.r, bgc.g, bgc.b, bgc.a * 0.5), true)
+			if _box_color == color_good:
+				cavas.draw_rect(Rect2(pos+Vector2(1,1), grid_size-Vector2(2,2)), color_bg, true)
+			else:
+				cavas.draw_line(pos + Vector2(6,6), pos + grid_size - Vector2(6,6), _box_color, true)
+				cavas.draw_line(pos + Vector2(grid_size.x-6, 6), pos + Vector2(6, grid_size.y-6), _box_color, true)
+		else:
+			cavas.draw_rect(Rect2(pos, grid_size), color_bg_start if is_first_placed else color_bg, true)
+			cavas.draw_rect(Rect2(pos+Vector2(1,1), grid_size-Vector2(2,2)), _box_color, false, -1.0 if box_style % 3 == 2 else 1.0)
 
 func draw_text(canvas: CanvasItem, cam_pos: Vector2, cam_zoom: Vector2, font: Font):
 	if text_visible && is_placed():
