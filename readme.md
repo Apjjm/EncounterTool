@@ -31,7 +31,7 @@ This is a new WIP project, and there may still be bugs to iron out. I will proba
 |Add step    |space / x / A            |
 |Delete step |backspace / circle / B   |
 |Clear steps |c / square / X           |
-|Encounter menu |triangle / M          |
+|Encounter menu | m / triangle / Y     |
 |Change map  |p / R3                   |
 
 ### Using FF4FE encounter finder
