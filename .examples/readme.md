@@ -72,6 +72,15 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](lunar-kingryu.png "Lunar King-Ryu")
 </details>
 
+### Other
+
+<details>
+<summary>Lilith (any formation) (Ordeals)</summary>
+
+![](ordeals-lilith.png "Ordeals Lilith")
+</details>
+
+
 ## Usage
 These examples are loops that can be walked
  - Encounters on, stand on "start"
