@@ -1,44 +1,78 @@
 ## Examples
+Note: This project is a WIP. Use these step charts in actual races at your own risk, especially if you haven't tested them in a practice seed first!
+Charts marked with a ✔ I have used a few times in a practice seed.
+
+
+### Baron
 
 <details>
-<summary>Baron D Machin</summary>
+<summary>D Machin</summary>
 
 ![](baron-dmachin.png "Baron D Machin")
 </details>
 <details>
-<summary>Baron Mac Giant</summary>
+<summary>Mac Giant</summary>
 
 ![](baron-macgiant.png "Baron Mac Giant")
 </details>
+
+### Mysidia
+
 <details>
-<summary>Mysidia D Machin</summary>
+<summary>D Machin</summary>
 
 ![](mysidia-dmachin.png "Mysidia D Machin")
 </details>
 <details>
-<summary>Mysidia Mac Giant</summary>
+<summary>Mac Giant (✔)</summary>
 
 ![](mysidia-macgiant.png "Mysidia Mac Giant")
 </details>
 <details>
-<summary>Mysidia Reaction</summary>
+<summary>Reaction</summary>
 
 ![](mysidia-reaction.png "Mysidia Reaction")
 </details>
 <details>
-<summary>Mysidia Warlock</summary>
+<summary>Warlock</summary>
 
 ![](mysidia-warlock.png "Mysidia Warlock")
 </details>
 <details>
-<summary>Mysidia King-Ryu</summary>
+<summary>King-Ryu</summary>
 
 ![](mysidia-kingryu.png "Mysidia King-Ryu")
 </details>
 
-## Usage
-This project is a WIP. Use these step charts in actual races at your own risk!
+### Lunar
 
+<details>
+<summary>D Machin</summary>
+
+![](lunar-dmachin.png "Lunar D Machin")
+</details>
+<details>
+<summary>Mac Giant</summary>
+
+![](lunar-macgiant.png "Lunar Mac Giant")
+</details>
+<details>
+<summary>Reaction</summary>
+
+![](lunar-reaction.png "Lunar Reaction")
+</details>
+<details>
+<summary>Warlock</summary>
+
+![](lunar-warlock.png "Lunar Warlock")
+</details>
+<details>
+<summary>King-Ryu</summary>
+
+![](lunar-kingryu.png "Lunar King-Ryu")
+</details>
+
+## Usage
 These examples are loops that can be walked
  - Encounters on, stand on "start"
  - Save + Reset
