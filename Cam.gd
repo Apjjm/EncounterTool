@@ -107,4 +107,5 @@ func move_world() -> void:
 	self.background1.region_rect = rect
 	self.background2.region_rect = rect
 	self.background3.region_rect = rect
+	self.background4.region_rect = rect
 	self.overlay.rect = rect
