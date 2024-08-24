@@ -141,8 +141,8 @@ static func merge_steps_for_different_goals(stepsA: Array, stepsB: Array) -> Arr
 				if encA.formation == encB.formation && encA.goal_encounter_on > 0 && encB.goal_encounter_on > 0:
 					var enc = StepData.EncounterData.new()
 					enc.formation = encA.formation
-					enc.goal_encounter_on = encA.goal_encounter_on if encA.goal_encounter_on < encB.goal_encounter_on else encB.goal_encounter_on
-					enc.goal_encounter_at = encA.goal_encounter_at if encA.goal_encounter_on < encB.goal_encounter_on else encB.goal_encounter_at
+					enc.goal_encounter_on = encA.goal_encounter_on if encA.goal_encounter_on <= encB.goal_encounter_on else encB.goal_encounter_on
+					enc.goal_encounter_at = encA.goal_encounter_at if encA.goal_encounter_on <= encB.goal_encounter_on else encB.goal_encounter_at
 					encs.push_back(enc)
 					break
 
