@@ -47,11 +47,6 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ### Lunar
 
 <details>
-<summary>D Machin</summary>
-
-![](lunar-dmachin.png "Lunar D Machin")
-</details>
-<details>
 <summary>Mac Giant</summary>
 
 ![](lunar-macgiant.png "Lunar Mac Giant")
