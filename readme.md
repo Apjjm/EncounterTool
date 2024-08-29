@@ -50,6 +50,8 @@ From my experimentation, it seems the encounter table is correct in Rosa in this
 Some example step tables have been produced using the output from FF4FE encounter finder and this tool to see if they match up.
 You can see these in the [tests](./.tests/) folder
 
+Additionally, the tool will output to the debug console the entire set of encounters for each seed in csv format (plus any sets of encounters it removed as it can't guarantee the desired encounter). You can use this output to check against other step charts more easily - note that the number for encounters needed includes the initial encounter you found (so is 1 bigger than what you see when plotting things in the tool). This output contains the number of steps needed to reach the 2nd start map encounter which is not shown directly in the tool - this could be used for manually adding in a few squares where you want to rely on step counting instead (this is best done in the early squares that you are most likely to hit). This is something the tool could look to do in the future, but it significantly complicates the logic to handle this for the general case at the moment (e.g. sometimes you want to use step counting to reject certain options instead of choosing them too!). PRs welcome.
+
 ### Credits
  - Encounter calculation logic + data from Rosa: https://github.com/aexoden/rosa
  - Inspiration for encounter finder: https://simbu95.github.io/FF4EncounterFinder
