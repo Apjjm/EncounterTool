@@ -57,12 +57,12 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](lunar-reaction.png "Lunar Reaction")
 </details>
 <details>
-<summary>Warlock</summary>
+<summary>Warlock (✔)</summary>
 
 ![](lunar-warlock.png "Lunar Warlock")
 </details>
 <details>
-<summary>King-Ryu</summary>
+<summary>King-Ryu (✔)</summary>
 
 ![](lunar-kingryu.png "Lunar King-Ryu")
 </details>
