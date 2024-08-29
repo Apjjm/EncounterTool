@@ -13,6 +13,7 @@ class FoundEncounter:
 	var first_encouter: RefCounted
 	var goal_encounter: RefCounted
 	var first_encounter_steps = -1
+	var next_encounter_steps = -1
 	var goal_encounters_on = []
 
 	func has_goal_encounter() -> bool:
@@ -34,6 +35,8 @@ static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_m
 		var encounter = _find_encounter_for_seed(s, start_map, goal_map, start_formations, goal_formations, goal_encounter_id)
 		encounters.push_back(encounter)
 
+	_log_encounters_per_seed(encounters, start_map, goal_map, goal_encounter_id)
+	
 	var results = []
 	for step in max_steps:
 		var step_data = StepData.new()
@@ -102,7 +105,7 @@ static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, step
 		if shared_possible_encounters_on.size() == 0:
 			# Multiple seeds generate the same encounter here, but depending on seeds you need to walk more/fewer steps!
 			# This isn't great news, obviously, because now we can't tell what to do from the formation alone.
-			print_debug("Removed an ambiguous formation on step " + str(step))
+			print(" Removed an ambiguous formation on step ", step)
 			var enc = FoundEncounter.new()
 			enc.start_map = group[0].start_map
 			enc.goal_map = group[0].goal_map
@@ -144,6 +147,8 @@ static func _find_encounter_for_seed(initial_seed: int, start_map: RosaData.Map,
 			if result.first_encouter == null:
 				result.first_encouter = start_formations[id]
 				result.first_encounter_steps = s+1
+			elif result.next_encounter_steps < 0:
+				result.next_encounter_steps = s+1-result.first_encounter_steps
 			
 			if _is_next_encounter_goal(stepper, goal_map.rate, goal_formations, goal_encounter_id):
 				result.goal_encounters_on.push_back(goal_encounter_on)
@@ -161,3 +166,10 @@ static func _is_next_encounter_goal(start_stepper: RosaStepper, rate: int, goal_
 			return goal_formations[id].number == goal_encounter_id
 	
 	return false
+
+static func _log_encounters_per_seed(encounters: Array, start_map: RosaData.Map, goal_map: RosaData.Map, goal_encounter_id: int):
+	print("Start: ", start_map.description, "  Goal: ", goal_map.description, "  Goal encounter id: ", goal_encounter_id)
+	print("seed, encounter 1 steps, encounter 1 formation, encounter 2 steps, goal encounters")
+	for i in range(encounters.size()):
+		print(i, ",", encounters[i].first_encounter_steps, ",", encounters[i].first_encouter.name.replace(",", ""), ",", encounters[i].next_encounter_steps, ",", "/".join(encounters[i].goal_encounters_on))
+	print("---")
