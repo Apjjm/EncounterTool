@@ -2,6 +2,7 @@
 Note: This project is a WIP. Use these step charts in actual races at your own risk, especially if you haven't tested them in a practice seed first!
 Charts marked with a ✔ I have used a few times in a practice seed.
 
+**If you want charts that require no step-counting at all, see the [formations-only charts](./formations-only/)**
 
 ### Baron
 
@@ -24,24 +25,9 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](mysidia-dmachin.png "Mysidia D Machin")
 </details>
 <details>
-<summary>Mac Giant (✔)</summary>
+<summary>Mac Giant</summary>
 
 ![](mysidia-macgiant.png "Mysidia Mac Giant")
-</details>
-<details>
-<summary>Reaction</summary>
-
-![](mysidia-reaction.png "Mysidia Reaction")
-</details>
-<details>
-<summary>Warlock</summary>
-
-![](mysidia-warlock.png "Mysidia Warlock")
-</details>
-<details>
-<summary>King-Ryu</summary>
-
-![](mysidia-kingryu.png "Mysidia King-Ryu")
 </details>
 
 ### Lunar
@@ -52,27 +38,14 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](lunar-macgiant.png "Lunar Mac Giant")
 </details>
 <details>
-<summary>Reaction</summary>
-
-![](lunar-reaction.png "Lunar Reaction")
-</details>
-<details>
-<summary>Warlock (✔)</summary>
+<summary>Warlock</summary>
 
 ![](lunar-warlock.png "Lunar Warlock")
 </details>
 <details>
-<summary>King-Ryu (✔)</summary>
+<summary>King-Ryu</summary>
 
 ![](lunar-kingryu.png "Lunar King-Ryu")
-</details>
-
-### Other
-
-<details>
-<summary>Lilith (any formation) (Ordeals)</summary>
-
-![](ordeals-lilith.png "Ordeals Lilith")
 </details>
 
 
@@ -80,16 +53,18 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 These examples are loops that can be walked
  - Encounters on, stand on "start"
  - Save + Reset
- - Start walking the route / loop
- - When you get an encounter on a cell with an x, reset
- - When you get an encounter on a dark cell:
-    - If the cell has a ?
-      - Run from this encounter, and then an additional X times using the number after the ?
-      - e.g. `? 2` would mean run from your initial encounter, then 2 more encounters. Your goal encounter will be on the next encounter.
-    - If the call has some letters
-        - If your encounter does not match one of the lettered encounters for this cell, reset
-        - Take an additional X encounters using the number after the ?
-    - Your goal encounter will be in location with the color of the text in the box.
-    - After running from the last encounter turn off encounters immediately and head to the location
-
-It is helpful to identify bits of nearby terrain to find your reference square quickly.
+ - Start walking the route / loop. The cell at the start of each loop cell is a bit lighter to make it easier to look up quickly.
+ - When you get an encounter, look at what cell (and what loop) you are in. The routes are plotted so you can use nearby terrain features to do this.
+   - If the cell is an `X` reset
+   - If the cell is `? <NUMBER>`:
+     - Your fight will be after `<NUMBER>` additional encounters here.
+   - If the cell is `<LETTERS> <NUMBER>` - e.g. `A 3`, `AB 0`:
+     - Look at the relevant encounter formations for these letters. If this is the encounter you see, your fight will be after `<NUMBER>` additional encounters.
+   - If the cell is `<NUMBER/*>: <NUMBER/X>` - e.g. `42: 1` `*: X`:
+     - If the first `NUMBER` is a `*` that means any other step count
+     - If the second `NUMBER` is a `X` that means reset for this step count
+     - Start counting steps after the first encounter. If your step count is the first number then your encounters will be after `<NUMBER>` additional encounters
+       - Note: this does not include the encounter you get while doing the step counting!
+     - Example: `3: X`, `*: 2` in a cell would mean reset if the step count was 3, otherwise take 2 extra encounters after your counted encounter
+ - After running/winning the last encounter turn off encounters immediately and head to the location
+ - Your goal encounter will be in the location with the color of the text in the box (if there are multiple locations)
