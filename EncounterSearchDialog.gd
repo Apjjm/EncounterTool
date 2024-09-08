@@ -131,65 +131,10 @@ func _calc_step_data(start: OptionButton, goal: OptionButton, fight: OptionButto
 
 static func merge_steps_for_different_goals(stepsA: Array, stepsB: Array) -> Array:
 	var result = []
-	
+
 	for i in range(stepsA.size()):
-		var encs = []
-
-		# Prefer steps with a smaller number of encounters needed
-		for encA in stepsA[i].encounters:
-			for encB in stepsB[i].encounters:
-				if encA.formation == encB.formation && encA.goal_encounter_on > 0 && encB.goal_encounter_on > 0:
-					var enc = StepData.EncounterData.new()
-					enc.formation = encA.formation
-					enc.goal_encounter_on = encA.goal_encounter_on if encA.goal_encounter_on <= encB.goal_encounter_on else encB.goal_encounter_on
-					enc.goal_encounter_at = encA.goal_encounter_at if encA.goal_encounter_on <= encB.goal_encounter_on else encB.goal_encounter_at
-					encs.push_back(enc)
-					break
-
-		# Then add any steps that we didn't minimise
-		for encA in stepsA[i].encounters:
-			var inB = false
-			for encB in encs:
-				if encA.formation == encB.formation:
-					inB = true
-					break
-			
-			if !inB && encA.goal_encounter_on > 0:
-				encs.push_back(encA)
-
-		for encA in stepsB[i].encounters:
-			var inB = false
-			for encB in encs:
-				if encA.formation == encB.formation:
-					inB = true
-					break
-			
-			if !inB && encA.goal_encounter_on > 0:
-				encs.push_back(encA)
-
-		# Then add any failed steps that we didn't minimise
-		for encA in stepsA[i].encounters:
-			var inB = false
-			for encB in encs:
-				if encA.formation == encB.formation:
-					inB = true
-					break
-			
-			if !inB:
-				encs.push_back(encA)
-
-		for encA in stepsB[i].encounters:
-			var inB = false
-			for encB in encs:
-				if encA.formation == encB.formation:
-					inB = true
-					break
-			
-			if !inB:
-				encs.push_back(encA)
-
 		var step_data = StepData.new()
-		step_data.encounters = encs
+		step_data.set_from_merge(stepsA[i], stepsB[i])
 		result.push_back(step_data)
 
 	return result

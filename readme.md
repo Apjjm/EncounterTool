@@ -35,7 +35,6 @@ This is a new WIP project, and there may still be bugs to iron out. I will proba
 |Change map  |p / R3                   |
 
 ### Changing how it looks
- - You can make all encounters visible by enabling `verbose_mode` on Overlay
  - You can change the style of the boxes drawn by increasing `box_style` on Overlay
 
 ### Using FF4FE encounter finder

@@ -63,7 +63,6 @@ region_rect = Rect2(0, 0, 1024, 1024)
 
 [node name="Overlay" type="Node2D" parent="Camera2D"]
 script = ExtResource("3_8tas0")
-verbose_mode = false
 font = ExtResource("5_wyan8")
 
 [connection signal="steps_updated" from="OldStepsDialog" to="Camera2D/Overlay" method="_update_step_log"]

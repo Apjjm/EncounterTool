@@ -1,0 +1,513 @@
+seed, encounter 1 steps, encounter 1 formation, encounter 2 steps, goal encounters, location
+0,37,Imp x3,50,4,Giant Passage
+1,37,Imp x3,19,,Giant Passage
+2,37,Imp x3,19,,Giant Passage
+3,56,Imp x3,31,,Giant Passage
+4,56,Imp x3,25,,Giant Passage
+5,56,Imp x3,25,,Giant Passage
+6,56,Imp x3,25,3,Giant Passage
+7,56,Imp x3,25,3,Giant Passage
+8,81,Imp x3,65,3,Giant Passage
+9,35,Imp x3,46,3,Giant Passage
+10,13,Imp x3,22,3,Giant Passage
+11,13,Imp x3,22,3,Giant Passage
+12,13,Imp x3,22,3,Giant Passage
+13,13,Imp x3,22,3,Giant Passage
+14,13,Imp x3,16,3,Giant Passage
+15,13,Imp x3,16,3,Giant Passage
+16,2,Imp x3,11,3,Giant Passage
+17,2,Imp x3,27,3,Giant Passage
+18,2,FloatEye x2,27,3,Giant Passage
+19,2,FloatEye x2,27,3,Giant Passage
+20,2,FloatEye x2,27,3,Giant Passage
+21,2,FloatEye x2,65,3,Giant Passage
+22,2,FloatEye x2,65,3,Giant Passage
+23,67,FloatEye x2,26,3,Giant Passage
+24,67,FloatEye x2,29,3,Giant Passage
+25,52,FloatEye x2,15,3,Giant Passage
+26,52,FloatEye x2,8,3,Giant Passage
+27,52,FloatEye x2,8,3,Giant Passage
+28,52,FloatEye x2,8,,Giant Passage
+29,7,FloatEye x2,45,,Giant Passage
+30,7,FloatEye x2,45,2,Giant Passage
+31,7,FloatEye x2,45,2,Giant Passage
+32,7,FloatEye x2,53,2,Giant Passage
+33,7,FloatEye x2,62,2,Giant Passage
+34,7,FloatEye x2,62,2,Giant Passage
+35,7,FloatEye x2,24,2,Giant Passage
+36,31,FloatEye x2,90,2,Giant Passage
+37,31,FloatEye x2,63,2,Giant Passage
+38,31,FloatEye x2,42,2,Giant Passage
+39,31,FloatEye x2,42,2,Giant Passage
+40,31,FloatEye x1 Eagle x2,42,2,Giant Passage
+41,26,FloatEye x1 Eagle x2,5,2,Giant Passage
+42,26,FloatEye x1 Eagle x2,47,2,Giant Passage
+43,26,FloatEye x1 Eagle x2,21,2,Giant Passage
+44,26,FloatEye x1 Eagle x2,21,2,Giant Passage
+45,26,FloatEye x1 Eagle x2,21,2,Giant Passage
+46,26,FloatEye x1 Eagle x2,21,2,Giant Passage
+47,26,FloatEye x1 Eagle x2,1,2,Giant Passage
+48,27,FloatEye x1 Eagle x2,20,2,Giant Passage
+49,27,FloatEye x1 Eagle x2,20,2,Giant Passage
+50,27,FloatEye x1 Eagle x2,27,2,Giant Passage
+51,27,FloatEye x1 Eagle x2,27,,Giant Passage
+52,27,FloatEye x1 Eagle x2,27,,Giant Passage
+53,15,FloatEye x1 Eagle x2,12,,Giant Passage
+54,15,FloatEye x1 Eagle x2,38,,Giant Passage
+55,15,FloatEye x1 Eagle x2,38,,Giant Passage
+56,15,FloatEye x1 Eagle x2,38,,Giant Passage
+57,15,FloatEye x1 Eagle x2,9,,Giant Passage
+58,15,FloatEye x1 Eagle x2,9,,Giant Passage
+59,15,FloatEye x1 Eagle x2,9,1,Giant Passage
+60,24,FloatEye x1 Eagle x2,29,1,Giant Passage
+61,24,Imp x3 SwordRat x1,44,1,Giant Passage
+62,24,Imp x3 SwordRat x1,4,1,Giant Passage
+63,24,Imp x3 SwordRat x1,4,1,Giant Passage
+64,28,Imp x3 SwordRat x1,2,1,Giant Passage
+65,28,Imp x3 SwordRat x1,2,1,Giant Passage
+66,28,Imp x3 SwordRat x1,2,1,Giant Passage
+67,28,Imp x3 SwordRat x1,2,1,Giant Passage
+68,28,Imp x3 SwordRat x1,2,1,Giant Passage
+69,30,Imp x3 SwordRat x1,13,1,Giant Passage
+70,43,Imp x3 SwordRat x1,29,1,Giant Passage
+71,43,Imp x3 SwordRat x1,29,1,Giant Passage
+72,43,Imp x3 SwordRat x1,29,1,Giant Passage
+73,72,Imp x3 SwordRat x1,5,1,Giant Passage
+74,1,Imp x3 SwordRat x1,71,1,Giant Passage
+75,1,Imp x3 SwordRat x1,47,1,Giant Passage
+76,1,Imp x3 SwordRat x1,47,1,Giant Passage
+77,1,Imp x3 SwordRat x1,47,1,Giant Passage
+78,1,Imp x3 SwordRat x1,9,1,Giant Passage
+79,1,Imp x3 SwordRat x1,9,1,Giant Passage
+80,1,Imp x3 SwordRat x1,9,,Giant Passage
+81,10,Imp x3 SwordRat x1,38,,Giant Passage
+82,8,Imp x3 SwordRat x1,2,,Giant Passage
+83,8,Eagle x3,2,,Giant Passage
+84,8,Eagle x3,2,,Giant Passage
+85,8,Eagle x3,68,,Giant Passage
+86,8,Eagle x3,24,,Giant Passage
+87,8,Eagle x3,24,,Giant Passage
+88,8,Eagle x3,24,,Giant Passage
+89,20,Eagle x3,12,,Giant Passage
+90,20,Eagle x3,12,,Giant Passage
+91,20,Eagle x3,12,,Giant Passage
+92,20,Eagle x3,12,,Giant Passage
+93,20,Eagle x3,30,,Giant Passage
+94,20,Eagle x3,30,,Giant Passage
+95,20,Eagle x3,19,,Giant Passage
+96,39,Eagle x3,11,,Giant Passage
+97,39,Eagle x3,11,,Giant Passage
+98,39,Eagle x3,11,,Giant Passage
+99,39,Imp x4,12,,Giant Passage
+100,39,Imp x4,12,,Giant Passage
+101,39,Imp x4,12,,Giant Passage
+102,51,Imp x4,40,,Giant Passage
+103,12,Imp x4,39,,Giant Passage
+104,12,Imp x4,39,5,Giant Passage
+105,12,Imp x4,50,5,Giant Passage
+106,12,Imp x4,50,5,Giant Passage
+107,12,Imp x4,50,4/5,Giant Passage
+108,12,Imp x4,50,4/5,Giant Passage
+109,12,Imp x4,21,4/5,Giant Passage
+110,33,Imp x4,29,4/5,Giant Passage
+111,33,Imp x4,49,4/5,Giant Passage
+112,33,Imp x4,49,4/5,Giant Passage
+113,17,Imp x4,16,4/5,Giant Passage
+114,17,Imp x4,16,4/5,Giant Passage
+115,17,Imp x3 SwordRat x1,16,4/5,Giant Passage
+116,17,Imp x3 SwordRat x1,32,4/5,Giant Passage
+117,17,Imp x3 SwordRat x1,32,4/5,Giant Passage
+118,17,Imp x3 SwordRat x1,32,4/5,Giant Passage
+119,17,Imp x3 SwordRat x1,32,4/5,Giant Passage
+120,23,Imp x3 SwordRat x1,26,4/5,Giant Passage
+121,23,Imp x3 SwordRat x1,36,4/5,Giant Passage
+122,23,Imp x3 SwordRat x1,36,4/5,Giant Passage
+123,23,Imp x6,57,4/5,Giant Passage
+124,23,Imp x6,57,4/5,Giant Passage
+125,23,Imp x3,57,4/5,Giant Passage
+126,23,Imp x3,57,4,Giant Passage
+127,80,Imp x3,6,4,Giant Passage
+128,46,Imp x3,34,4,Giant Passage
+129,46,Imp x3,34,,Giant Passage
+130,46,Imp x3,44,,Giant Passage
+131,46,Imp x3,33,,Giant Passage
+132,46,Imp x3,33,,Giant Passage
+133,46,Imp x3,33,,Giant Passage
+134,46,Imp x3,33,3,Giant Passage
+135,79,Imp x3,11,3,Giant Passage
+136,71,Imp x3,8,3,Giant Passage
+137,14,Imp x3,57,3,Giant Passage
+138,14,Imp x3,57,3,Giant Passage
+139,14,Imp x3,57,3,Giant Passage
+140,14,Imp x3,57,3,Giant Passage
+141,14,Imp x3,57,3,Giant Passage
+142,14,Imp x3,57,3,Giant Passage
+143,14,Imp x3,93,3,Giant Passage
+144,107,Imp x3,3,3,Giant Passage
+145,107,Imp x3,3,3,Giant Passage
+146,45,FloatEye x2,62,3,Giant Passage
+147,45,FloatEye x2,62,3,Giant Passage
+148,44,FloatEye x2,1,3,Giant Passage
+149,44,FloatEye x2,1,3,Giant Passage
+150,44,FloatEye x2,1,3,Giant Passage
+151,44,FloatEye x2,1,3,Giant Passage
+152,25,FloatEye x2,19,3,Giant Passage
+153,25,FloatEye x2,19,3,Giant Passage
+154,25,FloatEye x2,19,3,Giant Passage
+155,25,FloatEye x2,58,3,Giant Passage
+156,25,FloatEye x2,80,,Giant Passage
+157,25,FloatEye x2,80,,Giant Passage
+158,25,FloatEye x2,83,2,Giant Passage
+159,75,FloatEye x2,33,2,Giant Passage
+160,16,FloatEye x2,59,2,Giant Passage
+161,16,FloatEye x2,59,2,Giant Passage
+162,11,FloatEye x2,5,2,Giant Passage
+163,11,FloatEye x2,5,2,Giant Passage
+164,11,FloatEye x2,5,2,Giant Passage
+165,5,FloatEye x2,6,2,Giant Passage
+166,5,FloatEye x2,6,2,Giant Passage
+167,5,FloatEye x2,6,2,Giant Passage
+168,5,FloatEye x1 Eagle x2,6,2,Giant Passage
+169,5,FloatEye x1 Eagle x2,90,2,Giant Passage
+170,5,FloatEye x1 Eagle x2,37,2,Giant Passage
+171,4,FloatEye x1 Eagle x2,1,2,Giant Passage
+172,4,FloatEye x1 Eagle x2,38,2,Giant Passage
+173,4,FloatEye x1 Eagle x2,38,2,Giant Passage
+174,4,FloatEye x1 Eagle x2,38,2,Giant Passage
+175,4,FloatEye x1 Eagle x2,38,2,Giant Passage
+176,4,FloatEye x1 Eagle x2,38,2,Giant Passage
+177,4,FloatEye x1 Eagle x2,5,2,Giant Passage
+178,9,FloatEye x1 Eagle x2,32,2,Giant Passage
+179,9,FloatEye x1 Eagle x2,32,,Giant Passage
+180,9,FloatEye x1 Eagle x2,12,,Giant Passage
+181,9,FloatEye x1 Eagle x2,12,,Giant Passage
+182,9,FloatEye x1 Eagle x2,12,,Giant Passage
+183,9,FloatEye x1 Eagle x2,12,,Giant Passage
+184,21,FloatEye x1 Eagle x2,20,,Giant Passage
+185,21,FloatEye x1 Eagle x2,42,,Giant Passage
+186,21,FloatEye x1 Eagle x2,19,,Giant Passage
+187,40,FloatEye x1 Eagle x2,23,1,Giant Passage
+188,40,FloatEye x1 Eagle x2,23,1,Giant Passage
+189,18,Imp x3 SwordRat x1,22,1,Giant Passage
+190,18,Imp x3 SwordRat x1,22,1,Giant Passage
+191,18,Imp x3 SwordRat x1,22,1,Giant Passage
+192,18,Imp x3 SwordRat x1,22,1,Giant Passage
+193,18,Imp x3 SwordRat x1,86,1,Giant Passage
+194,18,Imp x3 SwordRat x1,1,1,Giant Passage
+195,18,Imp x3 SwordRat x1,1,1,Giant Passage
+196,19,Imp x3 SwordRat x1,84,1,Giant Passage
+197,19,Imp x3 SwordRat x1,84,1,Giant Passage
+198,19,Imp x3 SwordRat x1,84,1,Giant Passage
+199,19,Imp x3 SwordRat x1,84,1,Giant Passage
+200,19,Imp x3 SwordRat x1,84,1,Giant Passage
+201,6,Imp x3 SwordRat x1,97,1,Giant Passage
+202,6,Imp x3 SwordRat x1,32,1,Giant Passage
+203,6,Imp x3 SwordRat x1,32,1,Giant Passage
+204,6,Imp x3 SwordRat x1,32,1,Giant Passage
+205,6,Imp x3 SwordRat x1,32,1,Giant Passage
+206,6,Imp x3 SwordRat x1,32,1,Giant Passage
+207,6,Imp x3 SwordRat x1,32,1,Giant Passage
+208,38,Imp x3 SwordRat x1,32,,Giant Passage
+209,70,Imp x3 SwordRat x1,14,,Giant Passage
+210,84,Imp x3 SwordRat x1,50,,Giant Passage
+211,22,Eagle x3,62,,Giant Passage
+212,22,Eagle x3,62,,Giant Passage
+213,22,Eagle x3,62,,Giant Passage
+214,22,Eagle x3,62,,Giant Passage
+215,22,Eagle x3,79,,Giant Passage
+216,22,Eagle x3,79,,Giant Passage
+217,22,Eagle x3,52,,Giant Passage
+218,36,Eagle x3,38,,Giant Passage
+219,36,Eagle x3,38,,Giant Passage
+220,36,Eagle x3,38,,Giant Passage
+221,36,Eagle x3,38,,Giant Passage
+222,36,Eagle x3,38,,Giant Passage
+223,36,Eagle x3,19,,Giant Passage
+224,36,Eagle x3,19,,Giant Passage
+225,3,Eagle x3,52,,Giant Passage
+226,3,Eagle x3,52,,Giant Passage
+227,3,Imp x4,52,,Giant Passage
+228,3,Imp x4,52,,Giant Passage
+229,3,Imp x4,52,,Giant Passage
+230,3,Imp x4,128,,Giant Passage
+231,3,Imp x4,128,,Giant Passage
+232,131,Imp x4,6,5,Giant Passage
+233,131,Imp x4,6,5,Giant Passage
+234,34,Imp x4,97,5,Giant Passage
+235,34,Imp x4,32,4/5,Giant Passage
+236,34,Imp x4,32,4/5,Giant Passage
+237,34,Imp x4,32,4/5,Giant Passage
+238,34,Imp x4,32,4/5,Giant Passage
+239,34,Imp x4,32,4/5,Giant Passage
+240,34,Imp x4,32,4/5,Giant Passage
+241,57,Imp x4,9,4/5,Giant Passage
+242,57,Imp x4,41,4/5,Giant Passage
+243,57,Imp x3 SwordRat x1,8,4/5,Giant Passage
+244,57,Imp x3 SwordRat x1,8,4/5,Giant Passage
+245,57,Imp x3 SwordRat x1,8,4/5,Giant Passage
+246,57,Imp x3 SwordRat x1,8,4/5,Giant Passage
+247,57,Imp x3 SwordRat x1,8,4/5,Giant Passage
+248,65,Imp x3 SwordRat x1,61,4/5,Giant Passage
+249,65,Imp x3 SwordRat x1,61,4/5,Giant Passage
+250,126,Imp x3 SwordRat x1,3,4/5,Giant Passage
+251,97,Imp x6,32,4/5,Giant Passage
+252,37,Imp x6,60,4/5,Giant Passage
+253,37,Imp x3,60,4/5,Giant Passage
+254,37,Imp x3,60,4,Giant Passage
+255,37,Imp x3,60,4,Giant Passage
+0,37,Imp x3,50,,Giant Lung
+1,37,Imp x3,19,,Giant Lung
+2,37,Imp x3,19,,Giant Lung
+3,56,Imp x3,31,,Giant Lung
+4,56,Imp x3,25,,Giant Lung
+5,56,Imp x3,25,,Giant Lung
+6,56,Imp x3,25,,Giant Lung
+7,56,Imp x3,25,,Giant Lung
+8,81,Imp x3,65,,Giant Lung
+9,35,Imp x3,46,,Giant Lung
+10,13,Imp x3,22,,Giant Lung
+11,13,Imp x3,22,,Giant Lung
+12,13,Imp x3,22,,Giant Lung
+13,13,Imp x3,22,,Giant Lung
+14,13,Imp x3,16,,Giant Lung
+15,13,Imp x3,16,,Giant Lung
+16,2,Imp x3,11,,Giant Lung
+17,2,Imp x3,27,,Giant Lung
+18,2,FloatEye x2,27,,Giant Lung
+19,2,FloatEye x2,27,5,Giant Lung
+20,2,FloatEye x2,27,5,Giant Lung
+21,2,FloatEye x2,65,5,Giant Lung
+22,2,FloatEye x2,65,4/5,Giant Lung
+23,67,FloatEye x2,26,4/5,Giant Lung
+24,67,FloatEye x2,29,4/5,Giant Lung
+25,52,FloatEye x2,15,4/5,Giant Lung
+26,52,FloatEye x2,8,4/5,Giant Lung
+27,52,FloatEye x2,8,4/5,Giant Lung
+28,52,FloatEye x2,8,4/5,Giant Lung
+29,7,FloatEye x2,45,4/5,Giant Lung
+30,7,FloatEye x2,45,4/5,Giant Lung
+31,7,FloatEye x2,45,4/5,Giant Lung
+32,7,FloatEye x2,53,4/5,Giant Lung
+33,7,FloatEye x2,62,4/5,Giant Lung
+34,7,FloatEye x2,62,4/5,Giant Lung
+35,7,FloatEye x2,24,4/5,Giant Lung
+36,31,FloatEye x2,90,4/5,Giant Lung
+37,31,FloatEye x2,63,4/5,Giant Lung
+38,31,FloatEye x2,42,4/5,Giant Lung
+39,31,FloatEye x2,42,4/5,Giant Lung
+40,31,FloatEye x1 Eagle x2,42,4/5,Giant Lung
+41,26,FloatEye x1 Eagle x2,5,4,Giant Lung
+42,26,FloatEye x1 Eagle x2,47,4,Giant Lung
+43,26,FloatEye x1 Eagle x2,21,4,Giant Lung
+44,26,FloatEye x1 Eagle x2,21,,Giant Lung
+45,26,FloatEye x1 Eagle x2,21,,Giant Lung
+46,26,FloatEye x1 Eagle x2,21,,Giant Lung
+47,26,FloatEye x1 Eagle x2,1,,Giant Lung
+48,27,FloatEye x1 Eagle x2,20,,Giant Lung
+49,27,FloatEye x1 Eagle x2,20,3,Giant Lung
+50,27,FloatEye x1 Eagle x2,27,3,Giant Lung
+51,27,FloatEye x1 Eagle x2,27,3,Giant Lung
+52,27,FloatEye x1 Eagle x2,27,3,Giant Lung
+53,15,FloatEye x1 Eagle x2,12,3,Giant Lung
+54,15,FloatEye x1 Eagle x2,38,3,Giant Lung
+55,15,FloatEye x1 Eagle x2,38,3,Giant Lung
+56,15,FloatEye x1 Eagle x2,38,3,Giant Lung
+57,15,FloatEye x1 Eagle x2,9,3,Giant Lung
+58,15,FloatEye x1 Eagle x2,9,3,Giant Lung
+59,15,FloatEye x1 Eagle x2,9,3,Giant Lung
+60,24,FloatEye x1 Eagle x2,29,3,Giant Lung
+61,24,Imp x3 SwordRat x1,44,3,Giant Lung
+62,24,Imp x3 SwordRat x1,4,3,Giant Lung
+63,24,Imp x3 SwordRat x1,4,3,Giant Lung
+64,28,Imp x3 SwordRat x1,2,3,Giant Lung
+65,28,Imp x3 SwordRat x1,2,3,Giant Lung
+66,28,Imp x3 SwordRat x1,2,3,Giant Lung
+67,28,Imp x3 SwordRat x1,2,3,Giant Lung
+68,28,Imp x3 SwordRat x1,2,3,Giant Lung
+69,30,Imp x3 SwordRat x1,13,3,Giant Lung
+70,43,Imp x3 SwordRat x1,29,3,Giant Lung
+71,43,Imp x3 SwordRat x1,29,,Giant Lung
+72,43,Imp x3 SwordRat x1,29,,Giant Lung
+73,72,Imp x3 SwordRat x1,5,2,Giant Lung
+74,1,Imp x3 SwordRat x1,71,2,Giant Lung
+75,1,Imp x3 SwordRat x1,47,2,Giant Lung
+76,1,Imp x3 SwordRat x1,47,2,Giant Lung
+77,1,Imp x3 SwordRat x1,47,2,Giant Lung
+78,1,Imp x3 SwordRat x1,9,2,Giant Lung
+79,1,Imp x3 SwordRat x1,9,2,Giant Lung
+80,1,Imp x3 SwordRat x1,9,2,Giant Lung
+81,10,Imp x3 SwordRat x1,38,2,Giant Lung
+82,8,Imp x3 SwordRat x1,2,2,Giant Lung
+83,8,Eagle x3,2,2,Giant Lung
+84,8,Eagle x3,2,2,Giant Lung
+85,8,Eagle x3,68,2,Giant Lung
+86,8,Eagle x3,24,2,Giant Lung
+87,8,Eagle x3,24,2,Giant Lung
+88,8,Eagle x3,24,2,Giant Lung
+89,20,Eagle x3,12,2,Giant Lung
+90,20,Eagle x3,12,2,Giant Lung
+91,20,Eagle x3,12,2,Giant Lung
+92,20,Eagle x3,12,2,Giant Lung
+93,20,Eagle x3,30,2,Giant Lung
+94,20,Eagle x3,30,,Giant Lung
+95,20,Eagle x3,19,,Giant Lung
+96,39,Eagle x3,11,,Giant Lung
+97,39,Eagle x3,11,,Giant Lung
+98,39,Eagle x3,11,,Giant Lung
+99,39,Imp x4,12,,Giant Lung
+100,39,Imp x4,12,,Giant Lung
+101,39,Imp x4,12,,Giant Lung
+102,51,Imp x4,40,1,Giant Lung
+103,12,Imp x4,39,1,Giant Lung
+104,12,Imp x4,39,1,Giant Lung
+105,12,Imp x4,50,1,Giant Lung
+106,12,Imp x4,50,1,Giant Lung
+107,12,Imp x4,50,1,Giant Lung
+108,12,Imp x4,50,1,Giant Lung
+109,12,Imp x4,21,1,Giant Lung
+110,33,Imp x4,29,1,Giant Lung
+111,33,Imp x4,49,1,Giant Lung
+112,33,Imp x4,49,1,Giant Lung
+113,17,Imp x4,16,1,Giant Lung
+114,17,Imp x4,16,1,Giant Lung
+115,17,Imp x3 SwordRat x1,16,1,Giant Lung
+116,17,Imp x3 SwordRat x1,32,1,Giant Lung
+117,17,Imp x3 SwordRat x1,32,1,Giant Lung
+118,17,Imp x3 SwordRat x1,32,1,Giant Lung
+119,17,Imp x3 SwordRat x1,32,1,Giant Lung
+120,23,Imp x3 SwordRat x1,26,1,Giant Lung
+121,23,Imp x3 SwordRat x1,36,1,Giant Lung
+122,23,Imp x3 SwordRat x1,36,1,Giant Lung
+123,23,Imp x6,57,,Giant Lung
+124,23,Imp x6,57,,Giant Lung
+125,23,Imp x3,57,,Giant Lung
+126,23,Imp x3,57,,Giant Lung
+127,80,Imp x3,6,,Giant Lung
+128,46,Imp x3,34,,Giant Lung
+129,46,Imp x3,34,,Giant Lung
+130,46,Imp x3,44,,Giant Lung
+131,46,Imp x3,33,,Giant Lung
+132,46,Imp x3,33,,Giant Lung
+133,46,Imp x3,33,,Giant Lung
+134,46,Imp x3,33,,Giant Lung
+135,79,Imp x3,11,,Giant Lung
+136,71,Imp x3,8,,Giant Lung
+137,14,Imp x3,57,,Giant Lung
+138,14,Imp x3,57,,Giant Lung
+139,14,Imp x3,57,,Giant Lung
+140,14,Imp x3,57,,Giant Lung
+141,14,Imp x3,57,,Giant Lung
+142,14,Imp x3,57,,Giant Lung
+143,14,Imp x3,93,,Giant Lung
+144,107,Imp x3,3,,Giant Lung
+145,107,Imp x3,3,,Giant Lung
+146,45,FloatEye x2,62,,Giant Lung
+147,45,FloatEye x2,62,5,Giant Lung
+148,44,FloatEye x2,1,5,Giant Lung
+149,44,FloatEye x2,1,5,Giant Lung
+150,44,FloatEye x2,1,4/5,Giant Lung
+151,44,FloatEye x2,1,4/5,Giant Lung
+152,25,FloatEye x2,19,4/5,Giant Lung
+153,25,FloatEye x2,19,4/5,Giant Lung
+154,25,FloatEye x2,19,4/5,Giant Lung
+155,25,FloatEye x2,58,4/5,Giant Lung
+156,25,FloatEye x2,80,4/5,Giant Lung
+157,25,FloatEye x2,80,4/5,Giant Lung
+158,25,FloatEye x2,83,4/5,Giant Lung
+159,75,FloatEye x2,33,4/5,Giant Lung
+160,16,FloatEye x2,59,4/5,Giant Lung
+161,16,FloatEye x2,59,4/5,Giant Lung
+162,11,FloatEye x2,5,4/5,Giant Lung
+163,11,FloatEye x2,5,4/5,Giant Lung
+164,11,FloatEye x2,5,4/5,Giant Lung
+165,5,FloatEye x2,6,4/5,Giant Lung
+166,5,FloatEye x2,6,4/5,Giant Lung
+167,5,FloatEye x2,6,4/5,Giant Lung
+168,5,FloatEye x1 Eagle x2,6,4/5,Giant Lung
+169,5,FloatEye x1 Eagle x2,90,4,Giant Lung
+170,5,FloatEye x1 Eagle x2,37,4,Giant Lung
+171,4,FloatEye x1 Eagle x2,1,4,Giant Lung
+172,4,FloatEye x1 Eagle x2,38,,Giant Lung
+173,4,FloatEye x1 Eagle x2,38,,Giant Lung
+174,4,FloatEye x1 Eagle x2,38,,Giant Lung
+175,4,FloatEye x1 Eagle x2,38,,Giant Lung
+176,4,FloatEye x1 Eagle x2,38,,Giant Lung
+177,4,FloatEye x1 Eagle x2,5,3,Giant Lung
+178,9,FloatEye x1 Eagle x2,32,3,Giant Lung
+179,9,FloatEye x1 Eagle x2,32,3,Giant Lung
+180,9,FloatEye x1 Eagle x2,12,3,Giant Lung
+181,9,FloatEye x1 Eagle x2,12,3,Giant Lung
+182,9,FloatEye x1 Eagle x2,12,3,Giant Lung
+183,9,FloatEye x1 Eagle x2,12,3,Giant Lung
+184,21,FloatEye x1 Eagle x2,20,3,Giant Lung
+185,21,FloatEye x1 Eagle x2,42,3,Giant Lung
+186,21,FloatEye x1 Eagle x2,19,3,Giant Lung
+187,40,FloatEye x1 Eagle x2,23,3,Giant Lung
+188,40,FloatEye x1 Eagle x2,23,3,Giant Lung
+189,18,Imp x3 SwordRat x1,22,3,Giant Lung
+190,18,Imp x3 SwordRat x1,22,3,Giant Lung
+191,18,Imp x3 SwordRat x1,22,3,Giant Lung
+192,18,Imp x3 SwordRat x1,22,3,Giant Lung
+193,18,Imp x3 SwordRat x1,86,3,Giant Lung
+194,18,Imp x3 SwordRat x1,1,3,Giant Lung
+195,18,Imp x3 SwordRat x1,1,3,Giant Lung
+196,19,Imp x3 SwordRat x1,84,3,Giant Lung
+197,19,Imp x3 SwordRat x1,84,3,Giant Lung
+198,19,Imp x3 SwordRat x1,84,3,Giant Lung
+199,19,Imp x3 SwordRat x1,84,,Giant Lung
+200,19,Imp x3 SwordRat x1,84,,Giant Lung
+201,6,Imp x3 SwordRat x1,97,2,Giant Lung
+202,6,Imp x3 SwordRat x1,32,2,Giant Lung
+203,6,Imp x3 SwordRat x1,32,2,Giant Lung
+204,6,Imp x3 SwordRat x1,32,2,Giant Lung
+205,6,Imp x3 SwordRat x1,32,2,Giant Lung
+206,6,Imp x3 SwordRat x1,32,2,Giant Lung
+207,6,Imp x3 SwordRat x1,32,2,Giant Lung
+208,38,Imp x3 SwordRat x1,32,2,Giant Lung
+209,70,Imp x3 SwordRat x1,14,2,Giant Lung
+210,84,Imp x3 SwordRat x1,50,2,Giant Lung
+211,22,Eagle x3,62,2,Giant Lung
+212,22,Eagle x3,62,2,Giant Lung
+213,22,Eagle x3,62,2,Giant Lung
+214,22,Eagle x3,62,2,Giant Lung
+215,22,Eagle x3,79,2,Giant Lung
+216,22,Eagle x3,79,2,Giant Lung
+217,22,Eagle x3,52,2,Giant Lung
+218,36,Eagle x3,38,2,Giant Lung
+219,36,Eagle x3,38,2,Giant Lung
+220,36,Eagle x3,38,2,Giant Lung
+221,36,Eagle x3,38,2,Giant Lung
+222,36,Eagle x3,38,,Giant Lung
+223,36,Eagle x3,19,,Giant Lung
+224,36,Eagle x3,19,,Giant Lung
+225,3,Eagle x3,52,,Giant Lung
+226,3,Eagle x3,52,,Giant Lung
+227,3,Imp x4,52,,Giant Lung
+228,3,Imp x4,52,,Giant Lung
+229,3,Imp x4,52,,Giant Lung
+230,3,Imp x4,128,1,Giant Lung
+231,3,Imp x4,128,1,Giant Lung
+232,131,Imp x4,6,1,Giant Lung
+233,131,Imp x4,6,1,Giant Lung
+234,34,Imp x4,97,1,Giant Lung
+235,34,Imp x4,32,1,Giant Lung
+236,34,Imp x4,32,1,Giant Lung
+237,34,Imp x4,32,1,Giant Lung
+238,34,Imp x4,32,1,Giant Lung
+239,34,Imp x4,32,1,Giant Lung
+240,34,Imp x4,32,1,Giant Lung
+241,57,Imp x4,9,1,Giant Lung
+242,57,Imp x4,41,1,Giant Lung
+243,57,Imp x3 SwordRat x1,8,1,Giant Lung
+244,57,Imp x3 SwordRat x1,8,1,Giant Lung
+245,57,Imp x3 SwordRat x1,8,1,Giant Lung
+246,57,Imp x3 SwordRat x1,8,1,Giant Lung
+247,57,Imp x3 SwordRat x1,8,1,Giant Lung
+248,65,Imp x3 SwordRat x1,61,1,Giant Lung
+249,65,Imp x3 SwordRat x1,61,1,Giant Lung
+250,126,Imp x3 SwordRat x1,3,1,Giant Lung
+251,97,Imp x6,32,,Giant Lung
+252,37,Imp x6,60,,Giant Lung
+253,37,Imp x3,60,,Giant Lung
+254,37,Imp x3,60,,Giant Lung
+255,37,Imp x3,60,,Giant Lung

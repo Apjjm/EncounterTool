@@ -25,14 +25,14 @@ static func parse_from_encounter_finder(step_data: String) -> Array:
 		while (i+1)<lines.size() && !lines[i].to_lower().begins_with("step") && !lines[i+1].to_lower().begins_with("step"):
 			var e = _encounter_info_from_lines(lines[i], lines[i+1])
 			if e != null:
-				s.encounters.push_back(e)
+				s.encounters_by_formation.push_back(e)
 			else:
 				print_debug("Issue parsing encounter on step " + str(s.step) + "with lines:\n  " + lines[i] + "\n  " + lines[i+1])
 			i+=2
 
 	return result
 
-static func _encounter_info_from_lines(line1: String, line2: String) -> StepData.EncounterData:
+static func _encounter_info_from_lines(line1: String, line2: String) -> StepData.FormationEncounterData:
 	# Example: 7 Encounters | 2 Encounters with formation Imp x3
 	var parts = line1.split(" ", false)
 	if parts.size() < 2 || !parts[0].is_valid_int() || parts[1].to_lower() != "encounters":
@@ -41,7 +41,7 @@ static func _encounter_info_from_lines(line1: String, line2: String) -> StepData
 	if parts[0].to_int() == 0:
 		return null
 
-	var info = StepData.EncounterData.new()
+	var info = StepData.FormationEncounterData.new()
 	info.formation = ""
 	#info.num_encounters = parts[0].to_int()
 

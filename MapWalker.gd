@@ -18,6 +18,12 @@ class FoundEncounter:
 
 	func has_goal_encounter() -> bool:
 		return goal_encounters_on.size() > 0
+		
+	func get_goal_encounter_after_next() -> int:
+		for e in goal_encounters_on:
+			if e > 1:
+				return e
+		return -1
 
 static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_map: RosaData.Map, goal_encounter_id: int) -> Array:
 	var start_formations = data.get_encounters_for_map(start_map)
@@ -44,14 +50,17 @@ static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_m
 
 		var step_encounters = _filter_encounters_by_first_step(encounters, step)
 		var encounter_groups = _group_encounters_by_first_encounter(step_encounters)
-		step_encounters = _flatten_groups_by_unambig_num_encounters_needed(encounter_groups, step)
-		for e in step_encounters:
-			var encounter_data = StepData.EncounterData.new()
-			encounter_data.formation = e.first_encouter.name
-			encounter_data.goal_encounter_on = e.goal_encounters_on[0] if e.has_goal_encounter() else -1
-			encounter_data.goal_encounter_at = goal_map.description if e.has_goal_encounter() else "reset"
-			step_data.encounters.push_back(encounter_data)
+		for e in _flatten_groups_by_unambig_num_encounters_needed(encounter_groups, step):
+			var encounter_on = e.goal_encounters_on[0] if e.has_goal_encounter() else -1
+			var encounter_at = goal_map.description if e.has_goal_encounter() else "reset"
+			step_data.add_encounter_by_formation(e.first_encouter.name, encounter_on, encounter_at)
 		
+		encounter_groups = _group_encounters_by_2nd_encounter_steps(step_encounters)
+		for e in _flatten_groups_by_unambig_num_encounters_needed(encounter_groups, step):
+			var encounter_on = e.get_goal_encounter_after_next()
+			var encounter_at = goal_map.description if encounter_on > 0 else "reset"
+			step_data.add_encounter_by_steps(e.next_encounter_steps, encounter_on, encounter_at)
+
 	return results
 
 static func _filter_encounters_by_first_step(found_encounters: Array, step: int) -> Array:
@@ -59,6 +68,22 @@ static func _filter_encounters_by_first_step(found_encounters: Array, step: int)
 	for encounter in found_encounters:
 		if encounter.first_encounter_steps == step:
 			result.push_back(encounter)
+
+	return result
+
+static func _group_encounters_by_2nd_encounter_steps(found_encounters: Array) -> Array:
+	var result = []
+	for encounter in found_encounters:
+		var inserted = false
+
+		for other in result:
+			if encounter.next_encounter_steps == other[0].next_encounter_steps:
+				other.push_back(encounter)
+				inserted = true
+				break
+
+		if !inserted:
+			result.push_back([encounter])
 
 	return result
 
@@ -105,12 +130,13 @@ static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, step
 		if shared_possible_encounters_on.size() == 0:
 			# Multiple seeds generate the same encounter here, but depending on seeds you need to walk more/fewer steps!
 			# This isn't great news, obviously, because now we can't tell what to do from the formation alone.
-			print(" Removed an ambiguous formation on step ", step)
+			#print(" Removed an ambiguous formation on step ", step)
 			var enc = FoundEncounter.new()
 			enc.start_map = group[0].start_map
 			enc.goal_map = group[0].goal_map
 			enc.first_encouter = group[0].first_encouter
 			enc.first_encounter_steps = group[0].first_encounter_steps
+			enc.next_encounter_steps = group[0].next_encounter_steps
 			result.push_back(enc)
 		else:
 			# Multiple seeds gave the same pair(s) of encounters, but they all have this pairing.
@@ -119,7 +145,8 @@ static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, step
 			enc.goal_map = group[0].goal_map
 			enc.first_encouter = group[0].first_encouter
 			enc.first_encounter_steps = group[0].first_encounter_steps
-			enc.goal_encounter = group[0].goal_encounter		
+			enc.next_encounter_steps = group[0].next_encounter_steps
+			enc.goal_encounter = group[0].goal_encounter
 			enc.goal_encounters_on = shared_possible_encounters_on
 			result.push_back(enc) 
 

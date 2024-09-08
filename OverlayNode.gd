@@ -3,9 +3,7 @@ extends Node2D
 const RenderedStep = preload("RenderedStep.gd")
 const StepData = preload("StepData.gd")
 
-@export var verbose_mode : bool = true
 @export var box_style : int = 0
-
 @export var render_grid : bool = true
 @export var grid_color : Color = Color.LIGHT_GRAY
 @export var grid_color_region : Color = Color.LIGHT_CORAL
@@ -16,6 +14,8 @@ const StepData = preload("StepData.gd")
 @export var info_font_size : int = 24
 @export var ui_text_color : Color = Color.WHITE
 @export var goal_encounter_colors : Array = [Color.WHITE, Color.LIGHT_SALMON, Color.LIGHT_SEA_GREEN, Color.PINK]
+@export var use_stepcounts: bool = true
+@export var use_formations: bool = true
 
 var rect : Rect2
 var steps : Array
@@ -76,7 +76,7 @@ func _update_step_log(step_datas: Array) -> void:
 	for step in step_datas:
 		self.steps.push_back(RenderedStep.new(step, self.grid_size))
 
-		for enc in step.encounters:
+		for enc in step.encounters_by_formation:
 			if enc.formation != "" && !all_formations.has(enc.formation):
 				var letter = char(65 + all_formations.size())
 				all_formations[enc.formation] = letter
@@ -84,14 +84,10 @@ func _update_step_log(step_datas: Array) -> void:
 			if enc.goal_encounter_at != "" && enc.goal_encounter_at != "reset" && !self.location_colors.has(enc.goal_encounter_at):
 				var color = goal_encounter_colors[self.location_colors.size()]
 				self.location_colors[enc.goal_encounter_at] = color
-
-	# Encounter finder might still not always list formations for some encounters
-	if self.verbose_mode:
-		all_formations[""] = "?"
 	
 	var letters_used = []
 	for step in self.steps:
-		step.calculate_drawings(all_formations, self.location_colors, letters_used, self.verbose_mode)
+		step.calculate_drawings(all_formations, self.location_colors, letters_used, self.use_stepcounts, self.use_formations)
 
 	# Some formations never appear, so we will do a 2nd pass with the minimum letter set needed
 	for formation in all_formations:
@@ -99,11 +95,8 @@ func _update_step_log(step_datas: Array) -> void:
 			var letter = char(65 + self.formation_letters.size())
 			self.formation_letters[formation] = letter
 
-	if self.verbose_mode:
-		self.formation_letters[""] = "?"
-
 	for step in self.steps:
-		step.calculate_drawings(self.formation_letters, self.location_colors, [], self.verbose_mode)
+		step.calculate_drawings(self.formation_letters, self.location_colors, [], self.use_stepcounts, self.use_formations)
 
 	if self.steps.size() > 0:
 		self.steps[0].box_visible = false
