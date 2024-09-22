@@ -25,7 +25,7 @@ class FoundEncounter:
 				return e
 		return -1
 
-static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_map: RosaData.Map, goal_encounter_id: int) -> Array:
+static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_map: RosaData.Map, goal_encounter_id: int, skip_steps: int = 0) -> Array:
 	var start_formations = data.get_encounters_for_map(start_map)
 	var goal_formations = data.get_encounters_for_map(goal_map)
 	if start_formations.size() != 8:
@@ -38,7 +38,7 @@ static func find_encounter_steps(data: RosaData, start_map: RosaData.Map, goal_m
 	
 	var encounters = []
 	for s in range(256):
-		var encounter = _find_encounter_for_seed(s, start_map, goal_map, start_formations, goal_formations, goal_encounter_id)
+		var encounter = _find_encounter_for_seed(s, start_map, goal_map, start_formations, goal_formations, goal_encounter_id, skip_steps)
 		encounters.push_back(encounter)
 
 	_log_encounters_per_seed(encounters, start_map, goal_map, goal_encounter_id)
@@ -103,7 +103,7 @@ static func _group_encounters_by_first_encounter(found_encounters: Array) -> Arr
 
 	return result
 
-static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, step: int) -> Array:
+static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, _step: int) -> Array:
 	var result = []
 
 	for group in groups: 
@@ -152,12 +152,17 @@ static func _flatten_groups_by_unambig_num_encounters_needed(groups: Array, step
 
 	return result
 
-static func _find_encounter_for_seed(initial_seed: int, start_map: RosaData.Map, goal_map: RosaData.Map, start_formations: Array, goal_formations: Array, goal_encounter_id: int) -> FoundEncounter:
+static func _find_encounter_for_seed(initial_seed: int, start_map: RosaData.Map, goal_map: RosaData.Map, start_formations: Array, goal_formations: Array, goal_encounter_id: int, skip_steps: int) -> FoundEncounter:
 	var stepper = RosaStepper.new(start_map.rate, initial_seed)
 	var result = FoundEncounter.new()
 	result.start_map = start_map
 	result.goal_map = goal_map
 	
+	# Sometimes we might want to emulate walking off a save point or out of a town / save room
+	# We can't just ignore the first N steps normally, because later steps assume we havent hit an encounter yet.
+	for s in range(skip_steps):
+		stepper.step()
+
 	for f in goal_formations:
 		if f.number == goal_encounter_id:
 			result.goal_encounter = f

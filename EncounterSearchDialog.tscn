@@ -6,7 +6,7 @@
 [node name="Control" type="AcceptDialog"]
 title = "Configure encounter search"
 initial_position = 2
-size = Vector2i(500, 300)
+size = Vector2i(500, 316)
 visible = true
 script = ExtResource("1_0spdc")
 rosa_data = ExtResource("2_ge13l")
@@ -15,7 +15,7 @@ rosa_data = ExtResource("2_ge13l")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 492.0
-offset_bottom = 251.0
+offset_bottom = 267.0
 
 [node name="Ls" type="Label" parent="VBoxContainer"]
 layout_mode = 2
@@ -91,6 +91,17 @@ size_flags_horizontal = 3
 [node name="GoalLocation" type="OptionButton" parent="VBoxContainer/F4"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Skip" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Initial Skip steps"
+
+[node name="SK1" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+text = "0"
 
 [connection signal="confirmed" from="." to="." method="_on_confirmed"]
 [connection signal="item_selected" from="VBoxContainer/S1/Type" to="." method="_on_type_item_selected"]

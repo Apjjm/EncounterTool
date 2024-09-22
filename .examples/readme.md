@@ -25,29 +25,35 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](mysidia-dmachin.png "Mysidia D Machin")
 </details>
 <details>
-<summary>Mac Giant</summary>
+<summary>Mac Giant ✔</summary>
 
 ![](mysidia-macgiant.png "Mysidia Mac Giant")
 </details>
 
-### Lunar
+### Lunar Surface
 
 <details>
-<summary>Mac Giant</summary>
+<summary>Mac Giant ✔</summary>
 
-![](lunar-macgiant.png "Lunar Mac Giant")
+![](lunar-macgiant.png "Lunar Surface Mac Giant")
 </details>
 <details>
-<summary>Warlock</summary>
+<summary>Warlock ✔</summary>
 
-![](lunar-warlock.png "Lunar Warlock")
+![](lunar-warlock.png "Lunar Surface Warlock")
 </details>
-<details>
+<details>m
 <summary>King-Ryu</summary>
 
-![](lunar-kingryu.png "Lunar King-Ryu")
+![](lunar-kingryu.png "Lunar Surface King-Ryu")
 </details>
 
+### Lunar B7 (Save point start)
+<details>
+<summary>Warlock ✔</summary>
+
+![](lst-warlock.png "Lunar B7 Warlock")
+</details>
 
 ## Usage
 These examples are loops that can be walked
@@ -66,5 +72,7 @@ These examples are loops that can be walked
      - Start counting steps after the first encounter. If your step count is the first number then your encounters will be after `<NUMBER>` additional encounters
        - Note: this does not include the encounter you get while doing the step counting!
      - Example: `3: X`, `*: 2` in a cell would mean reset if the step count was 3, otherwise take 2 extra encounters after your counted encounter
+     - On Some charts, there will be helper numbers next to cells (or in brackets - e.g. `(+9)`)
+       - if you follow the main loop around this will indicate the end of the associated step count.
  - After running/winning the last encounter turn off encounters immediately and head to the location
  - Your goal encounter will be in the location with the color of the text in the box (if there are multiple locations)

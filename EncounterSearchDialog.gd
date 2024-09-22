@@ -17,6 +17,7 @@ var _end_location1
 var _end_location2
 var _end_location3
 var _end_location4
+var _skip_steps
 
 func _ready() -> void:
 	rosa_data.ensure_loaded()
@@ -30,6 +31,7 @@ func _ready() -> void:
 	_end_location2 = get_node("./VBoxContainer/F2/GoalLocation")
 	_end_location3 = get_node("./VBoxContainer/F3/GoalLocation")
 	_end_location4 = get_node("./VBoxContainer/F4/GoalLocation")
+	_skip_steps = get_node("./VBoxContainer/SK1")
 
 	_fight1.add_item("<none>")
 	_fight2.add_item("<none>")
@@ -119,13 +121,17 @@ func _get_encounter_from_optionbutton(btn: OptionButton) -> RefCounted:
 	
 	return null
 
+func _get_steps_to_skip() -> int:
+	return _skip_steps.get_text().to_int()
+
 func _calc_step_data(start: OptionButton, goal: OptionButton, fight: OptionButton) -> Array:
 	var start_map = _get_map_from_optionbutton(start)
 	var goal_map = _get_map_from_optionbutton(goal)
 	var goal_fight = _get_encounter_from_optionbutton(fight)
+	var skip_steps = _skip_steps.get_text().to_int()
 
 	if start_map != null && goal_map != null && goal_fight != null:
-		return MapWalker.find_encounter_steps(rosa_data, start_map, goal_map, goal_fight.number)
+		return MapWalker.find_encounter_steps(rosa_data, start_map, goal_map, goal_fight.number, skip_steps)
 
 	return []
 
