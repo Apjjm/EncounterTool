@@ -55,6 +55,12 @@ Charts marked with a ✔ I have used a few times in a practice seed.
 ![](lst-warlock.png "Lunar B7 Warlock")
 </details>
 
+<details>
+<summary>Behemoth</summary>
+
+![](lst-behemoth.png "Lunar B7 Behemoth")
+</details>
+
 ## Usage
 These examples are loops that can be walked
  - Encounters on, stand on "start"
